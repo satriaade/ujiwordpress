@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Kepala/Title */
+.kepala {
+  padding: 30px;
+  text-align: center;
+  background: orange;
+}
+
+.kepala h1 {
+  font-size: 50px;
+}
+
+/* Gaya Navigasi Atas */
+.navigasiatas {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Gaya Navigasi Atas Links */
+.navigasiatas a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Ganti Warna Hover */
+.navigasiatas a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Buat 2 Kolom Berbeda*/
+/* Kolom kiri */
+.kolomkiri {   
+  float: left;
+  width: 75%;
+}
+
+/* Kolom kanan */
+.kolomkanan {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Gambar Belakang */
+.gambarbelakang {
+  background-color: red;
+  width: 100%;
+  padding: 20px;
+  color: white;
+}
+
+/* Menambahkan kartu efek untuk artikel */
+.kartu {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Konten baris */
+.baris:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Kaki */
+.kaki {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  background-color: green;
+}
+
+/* Tampilan Responsif - saat layar kurang dari 800px, buat 2 kolom bertumpuk satu sama lain, bukan disamping satu sama lain */
+@media screen and (max-width: 800px) {
+  .kolomkiri, .kolomkanan {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Tampilan Responsif - saat layar kurang dari 400px, buat tautan navigasi bertumpuk di atas satu sama lain, bukan di samping satu sama lain */
+@media screen and (max-width: 400px) {
+  .navigasiatas a {
+    float: none;
+    width: 100%;
+  }
+}
